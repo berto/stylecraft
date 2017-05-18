@@ -3,7 +3,7 @@
     <img class="logo" src="../assets/logo.png">
     <h1>StyleCraft</h1>
     <p>
-      StyleCraft is a style guide generator using <a href="https://vuejs.org" target="_blank">Vue.js</a>
+      StyleCraft is a style guide <a href="https://vuejs.org" target="_blank">Vue.js</a> template
     </p>
     <h2></h2>
     <ul>

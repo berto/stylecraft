@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="component" v-for="component in components">
+    <div class="component" v-for="(component, i) in components">
       <h1 class="title"> {{component.title}} </h1>
       <span v-html="component.html"></span>
       <code-demo :html="component.html" :sass="component.sass"></code-demo>
@@ -10,28 +10,14 @@
 
 <script>
 import CodeDemo from './CodeDemo';
-
-const data = {
-  components: [
-    {
-      title: 'Buttons',
-      html: '<button class="sc-button">SOMETHING</button>',
-      sass: '.button { background: red }',
-    },
-    {
-      title: 'Banner',
-      html: '<div class="banner"></div>',
-      sass: '.banner { width: 300px; height: 300px; background: purple }',
-    },
-  ],
-};
+import components from '../components.json';
 
 export default {
   name: 'styles',
   components: {
     CodeDemo,
   },
-  data: () => data,
+  data: () => ({ components }),
 };
 </script>
 

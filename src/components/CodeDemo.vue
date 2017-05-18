@@ -24,27 +24,28 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
   code {
     width: 100%;
     height: 200px;
-  }
-  li {
-    padding-left: 10px;
-    padding-right: 10px;
-    border-bottom: 5px solid white;
+    border-radius: 2px;
   }
   .active {
-    border-bottom: 5px solid #42b983;
+    border-bottom: 3px solid #42b983;
   }
   ul {
     margin-bottom: 0;
     padding: 0;
     display: flex;
     list-style: none;
-  }
-  li:hover {
-    display: inline-block;
-    cursor: pointer;
+    li {
+      padding-left: 10px;
+      padding-right: 10px;
+      border-bottom: 5px solid white;
+      &:hover {
+        display: inline-block;
+        cursor: pointer;
+      }
+    }
   }
 </style>
