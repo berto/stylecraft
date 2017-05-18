@@ -8,8 +8,7 @@ export default {
 };
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style src="" scoped>
+<style scoped>
 .left-nav {
   background: #fff;
   position: fixed;

@@ -9,17 +9,22 @@
     <ul>
       <li><a href="https://github.com/berto/stylecraft" target="_blank">Code and Usage</a></li>
     </ul>
+    <styles></styles>
   </div>
 </template>
 
 <script>
+import Styles from './Styles';
+
 export default {
   name: 'container',
+  components: {
+    Styles,
+  },
 };
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style src="" scoped>
+<style scoped>
 h1, h2 {
   font-weight: normal;
 }

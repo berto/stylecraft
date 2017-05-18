@@ -1,3 +1,5 @@
+![logo](./src/assets/logo.png)
+
 # StyleCraft
 
 > Minimalist Pattern Library Generator
