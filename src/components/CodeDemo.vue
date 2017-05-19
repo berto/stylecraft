@@ -1,11 +1,11 @@
 <template >
   <section>
     <ul>
-      <li v-bind:class="{ active: displayHTML }" v-on:click="toggleCode"> HTML </li>
-      <li v-bind:class="{ active: !displayHTML }" v-on:click="toggleCode"> SASS </li>
+      <li v-bind:class="{ active: isHTML }" v-on:click="displayHTML(true)"> HTML </li>
+      <li v-bind:class="{ active: !isHTML }" v-on:click="displayHTML(false)"> SASS </li>
     </ul>
-    <pre v-if="displayHTML" v-highlightjs="html"><code class="html"></code></pre>
-    <pre v-if="!displayHTML" v-highlightjs="sass"><code class="sass"></code></pre>
+    <pre v-if="isHTML" v-highlightjs="html"><code class="html"></code></pre>
+    <pre v-if="!isHTML" v-highlightjs="sass"><code class="sass"></code></pre>
   </section>
 </template>
 
@@ -14,11 +14,11 @@ export default {
   name: 'code-demo',
   props: ['html', 'sass'],
   data: () => ({
-    displayHTML: true,
+    isHTML: true,
   }),
   methods: {
-    toggleCode() {
-      this.displayHTML = !this.displayHTML;
+    displayHTML(isHTML) {
+      this.isHTML = isHTML;
     },
   },
 };

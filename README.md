@@ -2,7 +2,7 @@
 
 # StyleCraft
 
-> Minimalist Pattern Library Generator
+> Vue Pattern Library Template
 
 ## Build Setup
 
@@ -12,6 +12,9 @@ npm install
 
 # serve with hot reload at localhost:8080
 npm run dev
+
+# generate components json with gulp
+npm run gen
 
 # build for production with minification
 npm run build
